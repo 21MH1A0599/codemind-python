@@ -5,8 +5,8 @@ sum=0
 k=n
 while n:
     r=n%10
-    sum=sum+r**l
-    n=n//10
+    sum+=r**l
+    n//=10
     l-=1
 if sum==k:
     print('True')

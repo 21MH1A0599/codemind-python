@@ -1,18 +1,18 @@
-def rev(n):
+def sqr(n):
+    s=n*n
+    return s
+def reverse(n):
     rev=0
     while n:
         r=n%10
         rev=rev*10+r
         n//=10
-    return rev
-def sqr(n):
-    s=n*n
-    return s
+    return rev    
 n=int(input())
 a=sqr(n)
-b=rev(n)
+b=reverse(n)
 c=sqr(b)
-if a==rev(c):
+if(a==reverse(c)):
     print('True')
 else:
     print('False')

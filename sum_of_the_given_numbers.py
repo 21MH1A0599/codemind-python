@@ -1,5 +1,5 @@
 a=int(input())
 for i in range(0,a):
-    m,n=map(int,input().split())
-    s=m+n
+    a,b=map(int,input().split())
+    s=a+b
     print(s)

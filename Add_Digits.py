@@ -1,10 +1,12 @@
 n=int(input())
 sum=0
-while(n//10!=0):
-    sum=0
-    while(n!=0):
-        r=n%10
-        n=n//10
-        sum=sum+r
-    n=sum
-print(sum)
+while 1:
+    r=n%10
+    sum+=r
+    n//=10
+    if n==0 and sum>9:
+        n=sum
+        sum=0
+    elif n==0 and sum<9:
+        print(sum)
+        break

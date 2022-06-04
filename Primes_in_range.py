@@ -10,7 +10,7 @@ a=int(input())
 b=int(input())
 c=0
 while a<=b:
-    if prime(a):
+    if(prime(a)):
         c+=1
     a+=1
 print(c)

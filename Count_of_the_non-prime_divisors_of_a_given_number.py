@@ -7,13 +7,12 @@ def prime(n):
     else:
         return 1
 n=int(input())
-c=0
-d=0
+c,d=0,0
 for i in range(1,n+1):
     if n%i==0:
+        c+=1
         if prime(i):
-            c+=1
-        else:
             d+=1
-print(d)
-        
+res=c-d
+print(res)
+            

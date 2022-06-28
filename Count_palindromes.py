@@ -1,15 +1,16 @@
-def pal(n):
+def palin(n):
     rev=0
+    t=n
     while n:
         r=n%10
         rev=rev*10+r
         n//=10
-    return rev
+    if rev==t:
+        return 1
 n=int(input())
-c=0
 a=list(map(int,input().split()))
+c=0
 for i in a:
-    t=i
-    if pal(i)==t:
+    if palin(i):
         c+=1
 print(c)

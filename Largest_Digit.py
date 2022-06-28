@@ -1,8 +1,8 @@
 n=int(input())
-i=0
+lar=0
 while n:
     r=n%10
-    if r>i:
-        i=r
+    if r>lar:
+        lar=r
     n//=10
-print(i)    
+print(lar)

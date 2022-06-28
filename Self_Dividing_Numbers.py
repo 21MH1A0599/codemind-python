@@ -1,17 +1,15 @@
-def self(n):
-    d=0
-    s=0
-    temp=n
+def selfnumber(n):
+    c,d=0,0
+    tem=n
     while n:
         r=n%10
-        if r!=0 and temp%r==0:
-            s+=1
+        if r!=0 and tem%r==0:
+            c+=1
         n//=10
         d+=1
-    if d==s:
-        print(temp,end=' ')
+    if d==c:
+        print(tem,end=' ')
 a=int(input())
 b=int(input())
 for i in range(a,b+1):
-    self(i)
-
+    selfnumber(i)

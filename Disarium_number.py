@@ -1,14 +1,15 @@
 import math
 n=int(input())
+s=0
+tem=n
 l=int(math.log10(n))+1
-sum=0
-k=n
 while n:
     r=n%10
-    sum+=r**l
+    s=s+r**l
     n//=10
     l-=1
-if sum==k:
+if tem==s:
     print('True')
 else:
     print('False')
+    

@@ -1,7 +1,7 @@
 a=input()
 a=a.lower()
-v='aeiou'
 a=a.split()
+v='aeiou'
 r=[]
 for i in a:
     c=0

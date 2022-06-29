@@ -1,4 +1,4 @@
-def reverse(n):
+def rev(n):
     rev=0
     while n:
         r=n%10
@@ -8,5 +8,5 @@ def reverse(n):
 n=int(input())
 a=list(map(int,input().split()))
 for i in a:
-    c=reverse(i)
+    c=rev(i)
     print(c,end=' ')

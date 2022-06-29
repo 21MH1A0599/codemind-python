@@ -1,9 +1,8 @@
 a=input()
+a=a.lower()
 a=a.split()
-for i in range(len(a)):
+for i in range(0,len(a)):
     if i%2==0:
-        a[i]=a[i][::-1]
-        print(a[i],end=' ')
+        print(a[i][::-1],end=' ')
     else:
         print(a[i],end=' ')
-        

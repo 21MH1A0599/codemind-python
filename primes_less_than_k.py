@@ -8,10 +8,10 @@ def prime(n):
         return 1
 n=int(input())
 a=list(map(int,input().split()))
-k=int(input())
+b=int(input())
 c=0
 for i in a:
-    if prime(i):
-        if i<=k:
-            c+=1
+   if prime(i):
+       if i<=b:
+           c+=1
 print(c)

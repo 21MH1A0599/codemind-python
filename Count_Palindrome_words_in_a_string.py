@@ -1,6 +1,6 @@
-def palin(s):
-    b=s[::-1]
-    if s==b:
+def pal(n):
+    b=n[::-1]
+    if n==b:
         return 1
     else:
         return 0
@@ -9,6 +9,6 @@ a=a.lower()
 a=a.split()
 c=0
 for i in a:
-    if palin(i):
+    if pal(i):
         c+=1
 print(c)

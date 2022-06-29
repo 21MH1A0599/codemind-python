@@ -1,7 +1,9 @@
-n=input()
-n=n.split()
-a=[]
-for i in n:
-    k=len(i)
-    a.append(k)
-print(*a)
+a=input()
+a=a.split()
+r=[]
+for i in a:
+    c=0
+    for j in i:
+        c+=1
+    r.append(c)
+print(*r)

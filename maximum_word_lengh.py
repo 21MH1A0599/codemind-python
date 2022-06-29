@@ -1,7 +1,7 @@
-n=input()
-n=n.split()
+a=input()
+a=a.split()
 r=[]
-for i in n:
+for i in a:
     k=len(i)
     r.append(k)
 print(max(r))

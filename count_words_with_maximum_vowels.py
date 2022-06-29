@@ -1,10 +1,10 @@
-n=input()
-n=n.lower()
-n=n.split()
+a=input()
+a=a.lower()
+a=a.split()
 v='aeiou'
-f=0
+c1=0
 r=[]
-for i in n:
+for i in a:
     c=0
     for j in i:
         if j in v:
@@ -12,5 +12,5 @@ for i in n:
     r.append(c)
 for i in r:
     if i==max(r):
-        f+=1
-print(f)
+        c1+=1
+print(c1)

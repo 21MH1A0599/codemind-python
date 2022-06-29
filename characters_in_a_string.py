@@ -1,3 +1,4 @@
-n=input()
-b=len(n)
-print(b)
+a=input()
+a=a.lower()
+c=len(a)
+print(c)

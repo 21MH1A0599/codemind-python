@@ -10,3 +10,4 @@ for i in a:
             c+=1
     r.append(c)
 print(min(r))
+            

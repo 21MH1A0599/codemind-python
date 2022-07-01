@@ -1,12 +1,12 @@
 n=int(input())
 a=list(map(int,input().split()))
-b=[]
 c=0
+r=[]
 for i in a:
     i=str(i)
     k=len(i)
-    b.append(k)
-for i in b:
-    if i==min(b):
+    r.append(k)
+for i in r:
+    if i==min(r):
         c+=1
 print(c)

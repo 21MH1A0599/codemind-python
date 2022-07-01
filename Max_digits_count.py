@@ -1,14 +1,12 @@
 n=int(input())
 a=list(map(int,input().split()))
-c=0
 r=[]
+c=0
 for i in a:
     i=str(i)
     k=len(i)
     r.append(k)
-l=max(r)
 for i in r:
-    if i==l:
+    if i==max(r):
         c+=1
 print(c)
-    

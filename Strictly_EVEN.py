@@ -2,7 +2,7 @@ n=int(input())
 a=list(map(int,input().split()))
 c=0
 for i in range(0,n):
-    if a[i]%2==0 and i%2:
+    if a[i]%2==0 and i%2!=0:
         print('False')
         c=1
         break

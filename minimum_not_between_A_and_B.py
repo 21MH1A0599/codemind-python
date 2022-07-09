@@ -1,4 +1,4 @@
-n=int(input())
+m=int(input())
 a=list(map(int,input().split()))
 x,y=map(int,input().split())
 r=[]

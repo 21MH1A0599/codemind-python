@@ -1,13 +1,11 @@
-s1=input()
-s2=input()
-a=[]
-s1=s1.lower()
-s2=s2.lower()
-s1=s1.split()
-s2=s2.split()
-for i in s1:
-    for j in s2:
+a=input()
+b=input()
+a=a.split()
+b=b.split()
+r=[]
+for i in a:
+    for j in b:
         if i==j:
-             if s1.count(i)==1 and s2.count(j)==1:
-                 a.append(i)
-print(len(a))
+            if a.count(i)==1 and b.count(i)==1:
+                r.append(i)
+print(len(r))

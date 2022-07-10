@@ -1,4 +1,4 @@
-def digitsum(n):
+def digit(n):
     s=0
     while n:
         r=n%10
@@ -7,7 +7,7 @@ def digitsum(n):
     return s
 n=int(input())
 a=list(map(int,input().split()))
-sum=0
+s=0
 for i in a:
-    sum+=digitsum(i)
-print(sum)
+    s+=digit(i)
+print(s)

@@ -1,9 +1,9 @@
-a,b=map(int,input().split())
-x=list(map(int,input().split()))
-y=list(map(int,input().split()))
+x,y=map(int,input().split())
+a=list(map(int,input().split()))
+b=list(map(int,input().split()))
 r=[]
-for i in x:
-    for j in y:
+for i in a:
+    for j in b:
         if i==j:
             if i not in r:
                 r.append(i)

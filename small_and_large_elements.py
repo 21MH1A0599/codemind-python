@@ -1,6 +1,6 @@
-n=input()
-n=n.split()
-if len(n)==2:
-    print(min(n[0]),max(n[1]))
+a=input()
+a=a.split()
+if len(a)==2:
+    print(min(a[0]),max(a[1]))
 else:
-    print(min(n[0]),max(n[len(n)-1]))
+    print(min(a[0]),max(a[len(a)-1]))

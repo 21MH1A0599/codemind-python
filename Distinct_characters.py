@@ -4,8 +4,8 @@ n=n.replace(" ","")
 n=sorted(n)
 r=[]
 for i in n:
-    if i not in r:
+    if n.count(i)==1:
         r.append(i)
 for i in r:
-    if i!=" ":
+    if i!=' ':
         print(i,end='')

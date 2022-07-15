@@ -1,9 +1,5 @@
-n=input()
-n=n.lower()
-n=n.replace(" ","")
-n=sorted(n)
-r=[]
-for i in n:
-    if i not in r:
-        r.append(i)
-print(len(r))
+a=input()
+a=a.lower()
+a=a.replace(" ","")
+a=set(a)
+print(len(a))

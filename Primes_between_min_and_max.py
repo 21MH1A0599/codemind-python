@@ -7,19 +7,15 @@ def prime(n):
     return 1
 n=int(input())
 a=list(map(int,input().split()))
-mi=min(a)
-ma=max(a)
+mii=a.index(min(a))
+mai=a.index(max(a))
 c=0
-mii=a.index(mi)
-mai=a.index(ma)
 if mii>mai:
     for i in range(mai,mii+1):
         if prime(a[i]):
             c+=1
-    print(c)
 else:
     for i in range(mii,mai+1):
         if prime(a[i]):
             c+=1
-    print(c)
-    
+print(c)

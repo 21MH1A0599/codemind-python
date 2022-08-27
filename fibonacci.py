@@ -1,9 +1,8 @@
 n=int(input())
-a=0
-b=1
-c=a+b
-for i in range(1,n+1):
-    print(a,end=' ')
+a,b=0,1
+print(a,b,end=' ')
+for i in range(2,n):
     c=a+b
+    print(c,end=' ')
     a=b
     b=c

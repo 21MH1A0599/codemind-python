@@ -6,20 +6,20 @@ def prime(n):
             return 0
     else:
         return 1
-a=int(input())
-for i in range(0,a):
+t=int(input())
+for i in range(t):
     n=int(input())
     m=n
-    for i in range(n,1,-1):
-        if prime(i):
-            a=i
+    for j in range(n,1,-1):
+        if prime(j):
+            a=j
             break
     while m!=0:
         if prime(m):
             b=m
             break
         m+=1
-    if n-a>b-n:
+    if (n-a>b-n):
         print(b)
-    else:
+    elif (n-a<=b-n):
         print(a)

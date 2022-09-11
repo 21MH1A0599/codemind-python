@@ -1,5 +1,7 @@
 n=int(input())
-rev,res,c=0,0,0
+rev=0
+c=0
+res=0
 while n:
     r=n%10
     rev=rev*10+r

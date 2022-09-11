@@ -1,9 +1,8 @@
 n=int(input())
 a=0
 b=1
-t=n
 c=a+b
-while c<=t:
+while c<=n:
     c=a+b
     a=b
     b=c

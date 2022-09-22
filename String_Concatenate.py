@@ -1,0 +1,12 @@
+s1=input()
+s2=input()
+s3=s1+s2
+s3=list(s3)
+s3.sort()
+s3=str(s3)
+s3=s3.replace(" ","")
+s3=s3.replace("[","")
+s3=s3.replace("]","")
+s3=s3.replace("'","")
+s3=s3.replace(",","")
+print(s3)

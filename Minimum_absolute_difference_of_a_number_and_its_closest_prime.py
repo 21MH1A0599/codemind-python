@@ -7,19 +7,18 @@ def prime(n):
     else:
         return 1
 n=int(input())
-m=n
-if n==2 or n==3 or n==5 or n==7 or n==1:
-    print("0")
-for i in range(n,2,-1):
+z=n
+for i in range(n,1,-1):
     if prime(i):
-        a=i
+        m=i
         break
-while m!=0:
-    if prime(m):
-        b=m
+while z!=0:
+    if prime(z):
+        y=z
         break
-    m+=1
-if n-a<b-n or n-a==b-n:
-    print(n-a)
-else:
-    print(b-n)
+    z+=1
+if n-m>y-n or n-m==y-n:
+    print(y-n)
+elif n-m<y-n:
+    print(n-m)
+    

@@ -1,4 +1,3 @@
-s=input().lower()
-s=s.split()
-s.sort()
-print(*s)
+n=input()
+n=n.split()
+print(*sorted(n))

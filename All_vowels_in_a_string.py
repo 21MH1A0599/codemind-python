@@ -1,11 +1,10 @@
 n=input()
-v="aeiou"
-l=[]
+v='aeiou'
+c=[]
 for i in n:
-    if i not in l:
-        if i in v:
-            l.append(i)
-if len(v)==len(l):
+    if i in v and i not in c:
+        c.append(i)
+if len(c)==len(v):
     print("True")
 else:
     print("False")

@@ -1,0 +1,5 @@
+n=int(input())
+a=list(map(int,input().split()))
+m=list(set(a))
+m.sort()
+print(m[len(m)-3])

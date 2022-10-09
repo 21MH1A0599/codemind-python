@@ -1,0 +1,7 @@
+n=input()
+n=n.replace(" ","")
+mi=min(n)
+ma=max(n)
+x=n.count(mi)
+y=n.count(ma)
+print(mi,x,ma,y)

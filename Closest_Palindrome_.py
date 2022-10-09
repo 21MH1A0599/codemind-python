@@ -7,6 +7,8 @@ def palin(n):
         n//=10
     if t==rev:
         return 1
+    else:
+        return 0
 n=int(input())
 for i in range(n-1,0,-1):
     if palin(i):
@@ -18,9 +20,9 @@ while m!=0:
         b=m
         break
     m+=1
-if (n-a)<(b-n):
+if n-a<b-n:
     print(a)
-elif(n-a)==(b-n):
-    print(a,b)
-else:
+elif n-a>b-n:
     print(b)
+elif n-a==b-n:
+    print(a,b)

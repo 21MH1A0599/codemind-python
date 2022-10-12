@@ -15,14 +15,14 @@ for i in range(n-1,0,-1):
         a=i
         break
 m=n+1
-while m!=0:
+while m:
     if palin(m):
         b=m
         break
     m+=1
-if n-a<b-n:
-    print(a)
-elif n-a>b-n:
+if n-a>b-n:
     print(b)
-elif n-a==b-n:
+elif n-a<b-n:
+    print(a)
+else:
     print(a,b)
